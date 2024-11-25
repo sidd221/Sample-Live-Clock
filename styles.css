@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #1a1a2e;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+.clock-container {
+    text-align: center;
+}
+
+#clock {
+    font-size: 4rem;
+    color: #00ffab;
+    text-shadow: 0 0 10px #00ffab, 0 0 20px #00ffab, 0 0 30px #00ffab, 0 0 40px #00ffab, 0 0 50px #00ffab;
+    animation: glow 1s infinite;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #00ffab, 0 0 20px #00ffab, 0 0 30px #00ffab, 0 0 40px #00ffab, 0 0 50px #00ffab;
+    }
+    50% {
+        text-shadow: 0 0 15px #00ffab, 0 0 25px #00ffab, 0 0 35px #00ffab, 0 0 45px #00ffab, 0 0 60px #00ffab;
+    }
+    100% {
+        text-shadow: 0 0 10px #00ffab, 0 0 20px #00ffab, 0 0 30px #00ffab, 0 0 40px #00ffab, 0 0 50px #00ffab;
+    }
+}
